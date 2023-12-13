@@ -77,15 +77,28 @@
                 
                 <label for="Jméno příjemce">Jméno příjemce:</label>
                 <input type="text" id="name" name="Jméno příjemce" required placeholder="John Doe"><br><br>
+                
+                <label for="zeme">Země:</label>
+                <select name="zeme">
+                    <option value="eu">EU</option>
+                    <option value="v prdeli">Mimo EU</option>
+                </select>
+                <br>
                 <br>
                 <label for="Objednáváte na firmu?">Objednáváte na firmu? (Pokud jo tak vám přiúčtujeme dalších 21% v daních, LOL skill issue)</label>
                 <label for="Ano">   Ano</label>
                 <input type="radio" value="ano"  name="Objednávka na firmu Ano/Ne">
                 <label for="ne">    Ne</label>
-                <input type="radio" value="ne" name="Objednávka na firmu Ano/Ne" required>
+                <input type="radio" value="ne" name="Objednávka na firmu Ano/Ne" required checked>
                 <br>
                 <label for="Souhlasím s obchodnímy podmínkami. (Prosím prodejte moje data!)">Souhlasím s obchodnímy podmínkami. (Prosím prodejte moje data!)</label>
-                <input type="checkbox" required='required' value="Souhlasím s obchodnímy podmínkami. (Prosím prodejte moje data!)">
+                <input type="checkbox" required='required' checked disabled value="Souhlasím s obchodnímy podmínkami. (Prosím prodejte moje data!)">
+                <br>
+                <label for="Chcete balíček cestou zničit? (Česká pošta moment)">Chcete balíček cestou zničit?  (Česká pošta moment)</label>
+                <input type="checkbox" required='required' checked disabled value="Chcete balíček cestou zničit? (Česká pošta moment)">
+                <br>
+                <label for="Chcete balíček poslat s nebo bez radiace?">Chcete balíček poslat s nebo bez Radiace?</label>
+                <input type="checkbox" required='required' value="Chcete balíček poslat s nebo bez Radiace?">
                 <br>
                 <input type="submit" value="Odeslat formulář">
             </form>

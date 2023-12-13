@@ -12,14 +12,14 @@
         <nav>
             <a href="./index.html">
                 <!-- Zde je logo -->
-                <img src="./images/logo.png" alt="Spicy Keycaps Logo" style="max-width: 100px;">
+                <img src="./images/logo.png" alt="Spicy Keycaps Logo" style="max-width: 60px;">
             </a>
             <a href="./index.html" class="link-light">Objednávka</a>
             <li style="display: inline; margin-right: 20px;"><a href="./products.html" class="link-light">Products</a></li>
         </nav>
     </header>
 
-    <main>
+    <main class="container-fluid">
     <div style="margin: 0; padding: 20px; background-color: #f5f5f5; text-align: center;">
         <!-- Hlavní obsah stránky -->
         <section>
@@ -33,8 +33,8 @@
             <img src="./images/keyboard_typing1.jpg" alt="Product 3" style="max-width: 100%; width: 350px;">
 
             <!-- Množství/sleva -->
-            <h2>Množství/sleva</h2>
-            <table style="margin: 0 auto;">
+            <h2 style="margin-top: 40px;">Množství/sleva</h2>
+            <table style="margin: 0 auto;"" class="table table-striped table-warning">
                 <tr>
                     <th>Množtví</th>
                     <th>Sleva</th>
@@ -58,17 +58,35 @@
             </table>
 
             <!-- Objednávkový formulář -->
-            <h2>Objednávkový formulář</h2>
+            <h2 style="margin-top: 40px;">Objednávkový formulář</h2>
             <form action="./submit_order.html" method="get" style="text-align: center;">
                 <label for="Jméno produktu">Jméno produktu:</label>
-                <input type="text" id="name" name="Jméno produktu" required><br><br>
+                <input type="text" id="name" name="Jméno produktu" required placeholder="Gold One piece keycap"><br><br>
 
                 <label for="EMail adresa">EMail adresa:</label>
-                <input type="email" id="email" name="EMail adresa" required><br><br>
+                <input type="email" id="email" name="EMail adresa" required placeholder="go@to.hell"><br><br>
 
                 <label for="Množství">Množství:</label>
-                <input type="number" id="quantity" name="Množství" min="1" required><br><br>
-
+                <input type="number" id="quantity" name="Množství" min="1" required placeholder="69"><br><br>
+                
+                <label for="Adresa">Adresa:</label>
+                <input type="text" id="name" name="Adresa" required placeholder="Praha 12, Ulice Ňoumova..."><br><br>
+                
+                <label for="Telefon">Tel. číslo:</label>
+                <input type="number" id="name" name="Tel. číslo" required placeholder="BEZ PŘEDČÍSLÍ, JENOM ČR"><br><br>
+                
+                <label for="Jméno příjemce">Jméno příjemce:</label>
+                <input type="text" id="name" name="Jméno příjemce" required placeholder="John Doe"><br><br>
+                <br>
+                <label for="Objednáváte na firmu?">Objednáváte na firmu? (Pokud jo tak vám přiúčtujeme dalších 21% v daních, LOL skill issue)</label>
+                <label for="Ano">   Ano</label>
+                <input type="radio" value="ano"  name="Objednávka na firmu Ano/Ne">
+                <label for="ne">    Ne</label>
+                <input type="radio" value="ne" name="Objednávka na firmu Ano/Ne" required>
+                <br>
+                <label for="Souhlasím s obchodnímy podmínkami. (Prosím prodejte moje data!)">Souhlasím s obchodnímy podmínkami. (Prosím prodejte moje data!)</label>
+                <input type="checkbox" required='required' value="Souhlasím s obchodnímy podmínkami. (Prosím prodejte moje data!)">
+                <br>
                 <input type="submit" value="Odeslat formulář">
             </form>
         </section>
@@ -80,8 +98,8 @@
         <h2>Další produkty</h2>
         <ul>
             <li><a href="https://jan64x.github.io/spiffier_tea/" target="_blank">Jan Petrlík</a></li>
-            <li><a href="[zatím ještě neodevzdala]" target="_blank">Leona Flutková</a></li>
-            <li><a href="https://sonjuuschool.github.io/Spicykeycaps/" target="_blank">Lukáš Nevrla</a></li>
+            <li><a href="https://flutkoval.github.io/spiffy_tea/shop/" target="_blank">Leona Flutková</a></li>
+            <li><a href="https://sonjuuschool.github.io/spiffy_tea/" target="_blank">Lukáš Nevrla</a></li>
         </ul>
     </aside>
 
@@ -95,12 +113,12 @@
         <nav>
             <a href="./index.html">
                 <!-- Znovu vložené logo -->
-                <img src="./images/logo.png" alt="Spicy Keycaps Logo" style="max-width: 100px;">
+                <img src="./images/logo.png" alt="Spicy Keycaps Logo" style="max-width: 70px;">
             </a>
             <a href="./kontakt.html" class="link-light">O firmě</a>
             <a href="./kontakt.html" class="link-light">Kontakt</a>
         </nav>
-        &copy; 2023 Spicy Keycaps E-Shop LLC | Vytvořil: Jan Petrlík
+        <p style="margin-top: 15px;">&copy; 2023 Spicy Keycaps E-Shop LLC | Vytvořil: Jan Petrlík</p>
     </footer>
 </body>
 

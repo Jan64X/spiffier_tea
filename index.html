@@ -59,27 +59,27 @@
 
             <!-- Objednávkový formulář -->
             <h2 style="margin-top: 40px;">Objednávkový formulář</h2>
-            <form action="./submit_order.html" method="get" style="text-align: center;">
+            <form action="./submit_order.html" method="get" style="text-align: center;" class="container bg-light pt-3 pb-5 pr-1 pl-1">
                 <label for="Jméno produktu">Jméno produktu:</label>
-                <input type="text" id="name" name="Jméno produktu" required placeholder="Gold One piece keycap"><br><br>
+                <input type="text" id="name" name="Jméno produktu" required placeholder="Gold One piece keycap" class="form-control"><br>
 
                 <label for="EMail adresa">EMail adresa:</label>
-                <input type="email" id="email" name="EMail adresa" required placeholder="go@to.hell"><br><br>
+                <input type="email" id="email" name="EMail adresa" required placeholder="go@to.hell" class="form-control"><br>
 
                 <label for="Množství">Množství:</label>
-                <input type="number" id="quantity" name="Množství" min="1" required placeholder="69"><br><br>
+                <input type="number" id="quantity" name="Množství" min="1" required placeholder="69" class="form-control"><br>
                 
                 <label for="Adresa">Adresa:</label>
-                <input type="text" id="name" name="Adresa" required placeholder="Praha 12, Ulice Ňoumova..."><br><br>
+                <input type="text" id="name" name="Adresa" required placeholder="Praha 12, Ulice Ňoumova..." class="form-control"><br>
                 
                 <label for="Telefon">Tel. číslo:</label>
-                <input type="number" id="name" name="Tel. číslo" required placeholder="BEZ PŘEDČÍSLÍ, JENOM ČR"><br><br>
+                <input type="number" id="name" name="Tel. číslo" required placeholder="BEZ PŘEDČÍSLÍ, JENOM ČR" class="form-control"><br>
                 
                 <label for="Jméno příjemce">Jméno příjemce:</label>
-                <input type="text" id="name" name="Jméno příjemce" required placeholder="John Doe"><br><br>
+                <input type="text" id="name" name="Jméno příjemce" required placeholder="John Doe" class="form-control"><br>
                 
                 <label for="zeme">Země:</label>
-                <select name="zeme">
+                <select name="zeme" class="form-select">
                     <option value="eu">EU</option>
                     <option value="v prdeli">Mimo EU</option>
                 </select>
@@ -91,16 +91,21 @@
                 <label for="ne">    Ne</label>
                 <input type="radio" value="ne" name="Objednávka na firmu Ano/Ne" required checked>
                 <br>
+                <div>
                 <label for="Souhlasím s obchodnímy podmínkami. (Prosím prodejte moje data!)">Souhlasím s obchodnímy podmínkami. (Prosím prodejte moje data!)</label>
-                <input type="checkbox" required='required' checked disabled value="Souhlasím s obchodnímy podmínkami. (Prosím prodejte moje data!)">
+                <input type="checkbox" required='required' checked disabled value="Souhlasím s obchodnímy podmínkami. (Prosím prodejte moje data!)" class="form-check-input">
                 <br>
                 <label for="Chcete balíček cestou zničit? (Česká pošta moment)">Chcete balíček cestou zničit?  (Česká pošta moment)</label>
-                <input type="checkbox" required='required' checked disabled value="Chcete balíček cestou zničit? (Česká pošta moment)">
+                <input type="checkbox" required='required' checked disabled value="Chcete balíček cestou zničit? (Česká pošta moment)" class="form-check-input">
                 <br>
                 <label for="Chcete balíček poslat s nebo bez radiace?">Chcete balíček poslat s nebo bez Radiace?</label>
-                <input type="checkbox" required='required' value="Chcete balíček poslat s nebo bez Radiace?">
+                <input type="checkbox" required='required' value="Chcete balíček poslat s nebo bez Radiace?" class="form-check-input">
+                </div>
                 <br>
-                <input type="submit" value="Odeslat formulář">
+                <div class="input-group" style="justify-content: center; padding-top: 10px;">
+                    <input type="reset" value="Smazat" class="btn btn-outline-danger">
+                    <input type="submit" value="Odeslat" class="btn btn-success">
+                </div>
             </form>
         </section>
     </main>
@@ -110,9 +115,23 @@
         <!-- Odkazy na jiné produkty -->
         <h2>Další produkty</h2>
         <ul>
-            <li><a href="https://jan64x.github.io/spiffier_tea/" target="_blank">Jan Petrlík</a></li>
-            <li><a href="https://flutkoval.github.io/spiffy_tea/shop/" target="_blank">Leona Flutková</a></li>
-            <li><a href="https://sonjuuschool.github.io/spiffy_tea/" target="_blank">Lukáš Nevrla</a></li>
+            <li>
+            <b href="https://jan64x.github.io/spiffier_tea/" target="_blank">
+                <button>Jan Petrlík</button>
+            </b>
+            </li>  
+
+            <li>
+                <b href="https://flutkoval.github.io/spiffy_tea/shop/" target="_blank">
+                    <button>Leona Flutková</button>
+                </b>
+            </li>
+
+            <li>
+                <b href="https://sonjuuschool.github.io/spiffy_tea/" target="_blank">
+                    <button>Lukáš Nevrla</button>
+                </b>
+            </li>
         </ul>
     </aside>
 
